@@ -5,6 +5,7 @@
     src: "{{ camunda_url }}"
     dest: "{{ camunda_home }}"
     owner: "{{ camunda_user }}"
+    owner: "{{ camunda_group }}"
     copy: no
     creates: "{{ camunda_home }}/start_camunda.sh"
   become: yes

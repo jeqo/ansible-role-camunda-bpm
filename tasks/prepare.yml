@@ -7,7 +7,7 @@
 - user:
     name: "{{ camunda_user }}"
     group: "{{ camunda_group }}"
-    home: "{{ camunda_base }}"
+    home: "{{ camunda_home }}"
     createhome: yes
     state: present
 
