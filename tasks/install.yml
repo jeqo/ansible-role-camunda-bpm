@@ -3,8 +3,8 @@
 - name: install camunda
   unarchive:
     src: "{{ camunda_url }}"
-    dest: "{{ camunda_base }}"
+    dest: "{{ camunda_home }}"
     owner: "{{ camunda_user }}"
     copy: no
-    creates: "{{ camunda_home }}/bin/camunda"
+    creates: "{{ camunda_home }}/start_camunda.sh"
   become: yes
