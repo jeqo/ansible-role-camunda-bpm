@@ -1,2 +1,11 @@
 ---
 # vars file for camunda-bpm
+camunda_url_directory: "https://camunda.org/release/camunda-bpm/{{ camunda_platform }}/{{ camunda_version }}"
+
+camunda_url: "{{ camunda_url_directory }}/camunda-bpm-{{ camunda_platform }}-{{ camunda_version }}.{{ camunda_release }}.tar.gz"
+
+camunda_base: /opt/camunda
+camunda_home: "{{ camunda_base }}/camunda-bpm-{{ camunda_platform }}-{{ camunda_version }}.{{ camunda_release }}"
+
+camunda_user: camunda
+camunda_group: camunda

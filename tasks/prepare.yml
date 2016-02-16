@@ -1,0 +1,18 @@
+---
+#
+- group:
+    name: "{{ camunda_group }}"
+    state: present
+
+- user:
+    name: "{{ camunda_user }}"
+    group: "{{ camunda_group }}"
+    home: "{{ camunda_base }}"
+    createhome: yes
+    state: present
+
+- name: install unarchive packages
+  package: name={{ item }} state=latest
+  with_items:
+    - unzip
+    - tar

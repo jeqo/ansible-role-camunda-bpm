@@ -1,0 +1,10 @@
+---
+#
+- name: install camunda
+  unarchive:
+    src: "{{ camunda_url }}"
+    dest: "{{ camunda_base }}"
+    owner: "{{ camunda_user }}"
+    copy: no
+    creates: "{{ camunda_home }}/bin/camunda"
+  become: yes

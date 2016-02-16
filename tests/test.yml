@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
-  remote_user: root
+# test units
+- name: test install camunda-bpm on centos 7 with openjdk jdk 8
+  hosts: test01
   roles:
-    - camunda-bpm
+    - role: camunda-bpm

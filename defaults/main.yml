@@ -1,2 +1,5 @@
 ---
 # defaults file for camunda-bpm
+camunda_version: 7.4
+camunda_release: 0
+camunda_platform: tomcat # wildfly jboss glassfish
