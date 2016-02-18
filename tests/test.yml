@@ -4,3 +4,14 @@
   hosts: test01
   roles:
     - role: camunda-bpm
+      camunda_version: 7.4
+      camunda_release: 0
+      camunda_platform: tomcat # wildfly jboss glassfish
+
+- name: test install camunda-bpm on centos 7 with openjdk jdk 8
+  hosts: test01
+  roles:
+    - role: camunda-bpm
+      camunda_version: 7.4
+      camunda_release: 0
+      camunda_platform: wildfly # wildfly jboss glassfish
